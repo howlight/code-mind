@@ -19,7 +19,7 @@
 
 Проект построен на базе современных инструментов разработки:
 
-* **Frontend:** React (v19) + TypeScript, HTML, CSS/SCSS.
+* **Frontend:** React (v19) + TypeScript, HTML, CSS.
 * **Сборка:** Vite — для максимально быстрого HMR и оптимизированного билда.
 * **Тестирование:** Vitest — современный фреймворк для юнит-тестов.
 
@@ -36,12 +36,12 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone https://github.com/dalekswar/CodeMind.git
+    git clone https://github.com/howlight/code-mind.git
     ```
 
 2.  **Перейдите в директорию проекта:**
     ```bash
-    cd CodeMind
+    cd code-mind
     ```
 
 3.  **Установите зависимости:**
@@ -80,10 +80,6 @@
 ## Контакты 📩
 
 Наша команда разработки:
-* **Sergei Kustov** — GitHub: [@SergikEnergy](https://github.com/SergikEnergy) — **Mentor**
-* **Sofia Gerasimenko** — GitHub: [@dalekswar](https://github.com/dalekswar) — **Team Lead**
-* **Zakhar Pochuvalov** — GitHub: [@sobselena](https://github.com/sobselena)
 * **Aleksey Zaderiy** — GitHub: [@howlight](https://github.com/howlight)
+* **Sergei Kustov** — GitHub: [@SergikEnergy](https://github.com/SergikEnergy) — **Mentor**
 
----
-## Деплой
