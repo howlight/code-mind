@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# CodeMind 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CodeMind** — современная веб-платформа для подготовки к техническим интервью. Проект предоставляет интуитивно понятный интерфейс для изучения актуальных технических знаний, практики навыков и закрепления концепций через интерактивные упражнения.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Общий обзор 🔍
 
-## React Compiler
+### Цели проекта 🎯
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🧠 **Эффективная подготовка** пользователей к техническим интервью с помощью структурированных и актуальных материалов.
+- 🌐 **Создание современного интерфейса**, где изучение тем и выполнение практических упражнений проходит максимально нативно.
+- 🤖 **Интеграция библиотеки курсов** по популярным темам: алгоритмы, структуры данных, frontend/backend разработка, базы данных и др.
+- 🎯 **Интерактивные виджеты** для закрепления знаний и проверки навыков в реальном времени.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Технологический стек 🛠️
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Проект построен на базе современных инструментов разработки:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React (v19) + TypeScript, HTML, CSS.
+- **Сборка:** Vite — для максимально быстрого HMR и оптимизированного билда.
+- **Тестирование:** Vitest — современный фреймворк для юнит-тестов.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+### Качество кода и стандарты:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **ESLint:** Анализ кода (конфиги React, TypeScript, Prettier).
+- **Prettier:** Автоматическое форматирование кода.
+- **Git Hooks:** Husky + lint-staged.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Быстрый старт ⚙️
+
+Чтобы запустить проект локально, выполните следующие шаги:
+
+1.  **Клонируйте репозиторий:**
+
+    ```bash
+    git clone https://github.com/howlight/code-mind.git
+    ```
+
+2.  **Перейдите в директорию проекта:**
+
+    ```bash
+    cd code-mind
+    ```
+
+3.  **Установите зависимости:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Запустите проект в режиме разработки:**
+    ```bash
+    npm run dev
+    ```
+    _Приложение будет доступно по адресу, указанному в терминале (обычно `http://localhost:5173`)._
+
+---
+
+## Доступные команды 📑
+
+В директории проекта можно использовать следующие команды:
+
+| Команда                   | Описание                                                       |
+| :------------------------ | :------------------------------------------------------------- |
+| `npm run dev`             | Запуск dev-сервера Vite с горячей перезагрузкой (HMR).         |
+| `npm run build`           | Сборка TypeScript и создание production-бандла в папке `dist`. |
+| `npm run preview`         | Локальный просмотр собранной production-версии.                |
+| `npm run lint`            | Запуск проверки кода через ESLint.                             |
+| `npm run format:fix`      | Автоматическое исправление форматирования через Prettier.      |
+| `npm run prepare`         | Настройка Husky (выполняется автоматически при установке).     |
+| `npm run style`           | Компиляция и наблюдение за файлами Sass/SCSS.                  |
+| `npm run test`            | Запуск тестов Vitest.                                          |
+| `npm run test:ui`         | Запуск Vitest в интерактивном UI-режиме.                       |
+| `npm run test:coverage`   | Генерация отчета о покрытии кода тестами.                      |
+| `npm run validate-branch` | Скрипт проверки корректности названия Git-ветки.               |
+
+---
+
+## Контакты 📩
+
+Наша команда разработки:
+
+- **Aleksey Zaderiy** — GitHub: [@howlight](https://github.com/howlight)
+- **Zakhar Pochuvalov** — GitHub: [@sobselena](https://github.com/sobselena)
+- **Sergei Kustov** — GitHub: [@SergikEnergy](https://github.com/SergikEnergy) — **Mentor**

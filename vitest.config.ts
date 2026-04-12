@@ -1,29 +1,25 @@
 import { defineConfig } from 'vitest/config';
+import { resolve } from 'path';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~': resolve(__dirname, './src'),
+    },
+  },
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: 'src/app/tests/setup.ts',
     coverage: {
       provider: 'v8',
-      include: ['src/**/*.{js,jsx,ts,tsx}'],
-      exclude: [
-        'src/**/*.test.{js,jsx,ts,tsx}',
-        'src/**/*.spec.{js,jsx,ts,tsx}',
-        'src/index.{js,jsx,ts,tsx}',
-        'src/setupTests.{js,ts}',
-        'src/**/*.d.ts',
-        'src/app/types/**',
-        'src/app/tests/mocks/**',
-        'src/main.tsx',
-        'src/app/App.tsx',
-      ],
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: ['**/*.test.*', '**/*.spec.*', '**/*.d.ts', 'src/app/tests/**'],
       thresholds: {
         statements: 80,
-        branches: 50,
-        functions: 50,
-        lines: 50,
+        branches: 80,
+        functions: 80,
+        lines: 80,
       },
     },
   },
