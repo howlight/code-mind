@@ -2,7 +2,6 @@
   padding: 48px;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-xl);
-
   background-color: var(--color-course-bg);
 
   @media (width < 600px) {
@@ -24,8 +23,8 @@
 
 .courseTopicsList {
   display: flex;
-  gap: 15px;
   flex-direction: column;
+  gap: 15px;
 }
 
 .courseTopic {
@@ -34,13 +33,14 @@
   display: flex;
   gap: 16px;
   align-items: center;
+
   width: 100%;
   padding: 20px;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
 
-  line-height: 1.5;
   font-weight: 600;
+  line-height: 1.5;
   color: var(--color-text);
 
   background-color: var(--color-topic-bg);

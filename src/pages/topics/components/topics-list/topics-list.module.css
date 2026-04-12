@@ -17,24 +17,24 @@
   border: none;
   border-radius: var(--radius-md);
 
-  background-color: transparent;
-
   font-size: 14px;
   font-weight: 600;
   color: var(--color-text-dim);
   text-align: left;
 
+  background-color: transparent;
+
   transition: var(--transition-normal);
 }
 
 .topicsBtn.active {
-  background-color: var(--color-button-topics);
   color: var(--color-accent);
+  background-color: var(--color-button-topics);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .topicsBtn:not(.active):hover {
-    background-color: var(--color-button-bg-hover);
     color: var(--color-text);
+    background-color: var(--color-button-bg-hover);
   }
 }

@@ -8,7 +8,6 @@
 .profileTitle {
   grid-column: 1 / -1;
   margin-bottom: 100px;
-
   font-size: clamp(24px, 5vw, 32px);
   font-weight: 800;
 }
