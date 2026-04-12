@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "stylelint": "stylelint **/*.{css}",
-    "stylelint:fix": "stylelint **/*.{css} --fix",
+    "stylelint": "stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "test": "vitest",
@@ -22,7 +22,7 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "*.{css}": [
+    "*.css": [
       "stylelint --fix",
       "prettier --write"
     ],

@@ -1,14 +1,15 @@
 .linkButton {
   display: inline-block;
+
   padding: 16px 32px;
   border-radius: 14px;
-
-  background-color: var(--color-accent);
 
   font-size: 16px;
   font-weight: 800;
   color: var(--color-text-inverse);
   text-align: center;
+
+  background-color: var(--color-accent);
 
   transition: var(--transition-normal);
 }

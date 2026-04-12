@@ -4,8 +4,8 @@
 
 .wrapper {
   display: grid;
-  gap: 40px;
   grid-template-columns: 1fr 340px;
+  gap: 40px;
 
   @media (width < 1000px) {
     grid-template-columns: 1fr;

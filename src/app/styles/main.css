@@ -1,7 +1,7 @@
-@import './lib/modern-normalize.css';
-@import './base/fonts.css';
-@import './base/variables.css';
-@import './base/settings.css';
+@import url('./lib/modern-normalize.css');
+@import url('./base/fonts.css');
+@import url('./base/variables.css');
+@import url('./base/settings.css');
 
 .container {
   max-width: 1100px;
