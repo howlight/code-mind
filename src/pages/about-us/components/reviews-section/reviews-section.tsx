@@ -1,14 +1,15 @@
-import { ReviewCard } from './components/review-card';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+import classNames from 'classnames';
 import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import titleStyles from '~/app/styles/ui/title.module.css';
 
 import { reviews } from '../../constants/reviews';
 import { REVIEWS_TEXTS } from '../../constants/texts/reviews-texts';
-
+import { ReviewCard } from './components/review-card';
 import styles from './reviews-section.module.css';
-import titleStyles from '../../../../app/styles/ui/title.module.css';
-import 'swiper/css';
-import classNames from 'classnames';
 
 export const ReviewsSection = () => (
   <section className={styles.reviews}>

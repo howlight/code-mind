@@ -1,11 +1,12 @@
-import type { LoginRequest } from '../../../types';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { loginSchema } from './login.schema';
+import { useForm } from 'react-hook-form';
 
-import { FormRow } from '../form-row';
+import { useLoginUserMutation } from '~/redux/api/usersAPI';
+import type { LoginRequest } from '~/types';
+
 import { AuthForm } from '../auth-form';
-import { useLoginUserMutation } from '../../../redux/api/usersAPI';
+import { FormRow } from '../form-row';
+import { loginSchema } from './login.schema';
 
 export const LoginForm = () => {
   const [loginUser, { isLoading }] = useLoginUserMutation();

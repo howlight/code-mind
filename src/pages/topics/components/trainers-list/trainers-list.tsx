@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-import type { TopicTrainer } from '../../model/types';
+import { Link } from 'react-router-dom';
 
 import { TRAINERS } from '../../model/trainers-config';
-
+import type { TopicTrainer } from '../../model/types';
 import styles from './trainers-list.module.css';
 
 type Props = {

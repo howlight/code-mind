@@ -1,5 +1,4 @@
 import type { Topic } from '../../model/types';
-
 import styles from './course-content.module.css';
 
 type Props = {
@@ -9,8 +8,7 @@ type Props = {
   onSelectTopic: (id: string) => void;
 };
 
-export const CourseContent = ({ description, topics, activeTopicId, onSelectTopic }: Props) => {
-  return (
+export const CourseContent = ({ description, topics, activeTopicId, onSelectTopic }: Props) => (
     <section className={styles.course}>
       <h2 className={styles.courseAboutTitle}>О курсе</h2>
       <p className={styles.courseDescription}>{description}</p>
@@ -32,4 +30,3 @@ export const CourseContent = ({ description, topics, activeTopicId, onSelectTopi
       </ul>
     </section>
   );
-};

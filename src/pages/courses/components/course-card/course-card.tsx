@@ -1,9 +1,7 @@
 import classNames from 'classnames';
 
-import type { Course } from '../../model/types';
-
 import { CourseLevel, DIFF_BARS } from '../../model/course-level';
-
+import type { Course } from '../../model/types';
 import styles from './course-card.module.css';
 
 type Props = Omit<Course, 'id' | 'slug'>;

@@ -1,4 +1,5 @@
-import type { LinkConfig } from '../types/link-config';
+import type { LinkConfig } from '~/types/link-config';
+
 import { Paths } from './paths';
 
 export const BASE_LINKS: LinkConfig[] = [

@@ -1,8 +1,6 @@
-import { ProfileForm } from './components/profile-form';
 import { ProfileAvatar } from './components/profile-avatar';
-
+import { ProfileForm } from './components/profile-form';
 import { MOCK_USER } from './model/mock-user';
-
 import styles from './profile-page.module.css';
 
 export const ProfilePage = () => {

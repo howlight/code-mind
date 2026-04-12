@@ -1,29 +1,30 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
-import { ErrorPage } from '../../pages/error/error-page';
-import { AppLayout } from '../layouts/app-layout/app-layout';
-import { AboutUsPage } from '../../pages/about-us';
-import { CoursesLayout } from '../layouts/courses-layout';
-import { CoursesPage } from '../../pages/courses';
+
 import {
   allCoursesLoader,
   courseInfoLoader,
   myCoursesLoader,
   topicLoader,
   topicsLoader,
-} from '../../api/loaders';
+} from '~/api/loaders';
+import { Paths } from '~/constants/paths';
+import { AboutUsPage } from '~/pages/about-us';
+import { LoginPage } from '~/pages/auth/login/login-page';
+import { RegisterPage } from '~/pages/auth/register/register-page';
+import { CourseInfoPage } from '~/pages/course-info';
+import { CoursesPage } from '~/pages/courses';
+import { Dashboard } from '~/pages/dashboard';
+import { ErrorPage } from '~/pages/error/error-page';
+import { LessonPage } from '~/pages/lesson';
+import { NotFoundPage } from '~/pages/not-found/not-found-page';
+import { ProfilePage } from '~/pages/profile/profile-page';
+import { TopicsPage } from '~/pages/topics';
 
+import { AppLayout } from '../layouts/app-layout/app-layout';
+import { CoursesLayout } from '../layouts/courses-layout';
 import { WidgetLayout } from '../layouts/widget-layout/widget-layout';
-import { ProfilePage } from '../../pages/profile/profile-page';
-import { LoginPage } from '../../pages/auth/login/login-page';
-import { RegisterPage } from '../../pages/auth/register/register-page';
-import { NotFoundPage } from '../../pages/not-found/not-found-page';
-import { LessonPage } from '../../pages/lesson';
-import { TopicsPage } from '../../pages/topics';
-import { CourseInfoPage } from '../../pages/course-info';
-import { Dashboard } from '../../pages/dashboard';
-import { AlreadyLoggedInRoute } from './public-only-route';
 import { AuthorizedOnlyRoute } from './protected-route';
-import { Paths } from '../../constants/paths';
+import { AlreadyLoggedInRoute } from './public-only-route';
 
 export const router = createBrowserRouter([
   {

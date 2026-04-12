@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import type { Direction } from '../../../../types/about-us';
 
+import type { Direction } from '../../../../types/about-us';
 import styles from './direction-card.module.css';
 
 export const DirectionCard = ({ id, icon, tag, title, description }: Direction) => (

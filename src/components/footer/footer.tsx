@@ -1,6 +1,8 @@
 import { useState } from 'react';
+
+import { team } from '~/constants/team-members';
+
 import styles from './footer.module.css';
-import { team } from '../../constants/team-members';
 
 export const Footer = () => {
   const [selectedGh, setSelectedGh] = useState(team[0].gh);

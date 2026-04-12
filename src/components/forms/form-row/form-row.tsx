@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import type { FieldError } from 'react-hook-form';
+
 import styles from './form-row.module.css';
 
 type Props = {
@@ -9,8 +10,7 @@ type Props = {
   isOptional?: boolean;
 };
 
-export const FormRow = ({ label, error, children, isOptional = false }: Props) => {
-  return (
+export const FormRow = ({ label, error, children, isOptional = false }: Props) => (
     <div className={styles.row}>
       {label && (
         <label className={styles.rowLabel} htmlFor={children.props.id}>
@@ -21,4 +21,3 @@ export const FormRow = ({ label, error, children, isOptional = false }: Props) =
       {error && <span className={styles.rowError}>{error.message}</span>}
     </div>
   );
-};

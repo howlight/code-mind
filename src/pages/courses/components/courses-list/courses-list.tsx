@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
-import { CourseCard } from '../course-card/course-card';
+
+import { Paths } from '~/constants';
 
 import type { Course } from '../../model/types';
-
-import { Paths } from '../../../../constants';
-
+import { CourseCard } from '../course-card/course-card';
 import styles from './courses-list.module.css';
 
 type Props = {

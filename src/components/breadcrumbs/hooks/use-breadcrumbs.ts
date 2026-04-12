@@ -1,6 +1,7 @@
 import { useLocation, useParams } from 'react-router-dom';
-import { Paths } from '../../../constants';
-import type { RouteParams } from '../../../types/route-params';
+
+import { Paths } from '~/constants';
+import type { RouteParams } from '~/types/route-params';
 
 type Crumb = {
   name: string;

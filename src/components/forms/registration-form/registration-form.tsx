@@ -1,12 +1,14 @@
-import { FormRow } from '../form-row';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { registrationSchema, type RegistrationFormValues } from './registration.schema';
-import { AuthForm } from '../auth-form';
+import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import { useSignUpUserMutation } from '../../../redux/api/usersAPI';
-import { Paths } from '../../../constants';
+
+import { Paths } from '~/constants';
+import { useSignUpUserMutation } from '~/redux/api/usersAPI';
+
+import { AuthForm } from '../auth-form';
+import { FormRow } from '../form-row';
 import styles from './register-form.module.css';
+import { type RegistrationFormValues,registrationSchema } from './registration.schema';
 
 export const RegistrationForm = () => {
   const {
@@ -22,9 +24,9 @@ export const RegistrationForm = () => {
     try {
       await signUpUser(restData).unwrap();
       navigate(Paths.LOGIN);
-    } catch (err) {
+    } catch (error) {
       // no navigation in case of error
-      console.log(err);
+      console.log(error);
     }
   };
 

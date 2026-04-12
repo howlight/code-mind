@@ -1,11 +1,10 @@
-import { LinkButton } from '../../components/link-button';
+import { LinkButton } from '~/components/link-button';
+import { Paths } from '~/constants';
 
 import notFoundAvif from './assets/not-found.avif';
-import notFoundWebp from './assets/not-found.webp';
 import notFoundJpg from './assets/not-found.jpg';
-
+import notFoundWebp from './assets/not-found.webp';
 import styles from './not-found-page.module.css';
-import { Paths } from '../../constants';
 
 export const NotFoundPage = () => (
   <section className={styles.notFound}>

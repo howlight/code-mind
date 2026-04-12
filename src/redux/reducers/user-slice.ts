@@ -1,5 +1,6 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { UserPersonalData } from '../../types';
+
+import type { UserPersonalData } from '~/types';
 
 const accessTokenFromStorage = localStorage.getItem('accessToken');
 const initialState: UserPersonalData = {
@@ -25,7 +26,7 @@ const userSlice = createSlice({
       state,
       {
         payload: { email, login, firstName, lastName },
-      }: PayloadAction<Omit<UserPersonalData, 'accessToken'>>
+      }: PayloadAction<Omit<UserPersonalData, 'accessToken'>>,
     ) {
       state.email = email;
       state.firstName = firstName;
@@ -43,14 +44,12 @@ const userSlice = createSlice({
   },
   selectors: {
     isAuthSelector: (state) => Boolean(state.accessToken),
-    userDataSelector: (state) => {
-      return {
-        email: state.email,
-        login: state.login,
-        firstName: state.firstName,
-        lastName: state.lastName,
-      };
-    },
+    userDataSelector: (state) => ({
+      email: state.email,
+      login: state.login,
+      firstName: state.firstName,
+      lastName: state.lastName,
+    }),
   },
 });
 

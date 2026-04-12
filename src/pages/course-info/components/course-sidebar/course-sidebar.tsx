@@ -1,8 +1,7 @@
+import { LinkButton } from '~/components/link-button';
+import { Paths } from '~/constants';
+
 import type { Topic } from '../../model/types';
-import { LinkButton } from '../../../../components/link-button';
-
-import { Paths } from '../../../../constants';
-
 import styles from './course-sidebar.module.css';
 
 type Props = Omit<Topic, 'id'>;

@@ -1,11 +1,13 @@
+import type { ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
 
-import type { ReactNode } from 'react';
-import { useIsAuth } from '../../redux/hooks/useIsAuth';
-import { Paths } from '../../constants/paths';
+import { Paths } from '~/constants/paths';
+import { useIsAuth } from '~/redux/hooks/useIsAuth';
+
 type Props = {
   children: ReactNode;
 };
+
 export const AlreadyLoggedInRoute = ({ children }: Props) => {
   const isAuth = useIsAuth();
 

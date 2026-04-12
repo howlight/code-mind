@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { TopicsList } from './components/topics-list';
+
 import { TopicDescription } from './components/topic-description';
+import { TopicsList } from './components/topics-list';
 import { TrainersList } from './components/trainers-list';
-
 import { MOCK_TOPICS } from './model/mock-topics';
-
 import styles from './topics-page.module.css';
 
 const topics = MOCK_TOPICS;
