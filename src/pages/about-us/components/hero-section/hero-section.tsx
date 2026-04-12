@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 import { HERO_TEXTS } from '../../constants/texts/hero-texts';
-
 import styles from './hero-section.module.css';
 
 export const HeroSection = () => (

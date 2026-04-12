@@ -1,12 +1,13 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import styles from './header.module.css';
-import { HeaderBreadcrumbs } from '../breadcrumbs';
-import { useIsAuth } from '../../redux/hooks/useIsAuth';
-import { Paths } from '../../constants/paths';
-import { useGetCurrentUserQuery } from '../../redux/api/usersAPI';
-
 import classNames from 'classnames';
-import { getLinks } from '../../utils/get-links';
+import { NavLink, useLocation } from 'react-router-dom';
+
+import { Paths } from '~/constants/paths';
+import { useGetCurrentUserQuery } from '~/redux/api/usersAPI';
+import { useIsAuth } from '~/redux/hooks/useIsAuth';
+import { getLinks } from '~/utils/get-links';
+
+import { HeaderBreadcrumbs } from '../breadcrumbs';
+import styles from './header.module.css';
 
 export const Header = () => {
   const { pathname } = useLocation();
@@ -31,21 +32,16 @@ export const Header = () => {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          {getLinks(isAuth).map((linkProps) => {
-            return (
-              <li
-                className={classNames({ [styles.itemLogo]: linkProps.isLogo })}
-                key={linkProps.key}
+          {getLinks(isAuth).map((linkProps) => (
+            <li className={classNames({ [styles.itemLogo]: linkProps.isLogo })} key={linkProps.key}>
+              <NavLink
+                to={linkProps.link}
+                className={linkProps.isLogo ? styles.logo : getNavLinkClass}
               >
-                <NavLink
-                  to={linkProps.link}
-                  className={linkProps.isLogo ? styles.logo : getNavLinkClass}
-                >
-                  {linkProps.text}
-                </NavLink>
-              </li>
-            );
-          })}
+                {linkProps.text}
+              </NavLink>
+            </li>
+          ))}
 
           <li
             className={classNames(styles.itemCrumbs, {

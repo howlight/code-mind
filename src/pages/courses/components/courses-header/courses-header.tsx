@@ -1,5 +1,4 @@
 import { COURSES_PAGE_TEXT } from '../../constants/courses-page-text';
-
 import styles from './courses-header.module.css';
 
 export const CoursesHeader = () => (

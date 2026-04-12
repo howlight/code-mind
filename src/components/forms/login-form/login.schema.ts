@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import { ERROR_MESSAGES, LOGIN, PASSWORD } from '../../../constants/auth-data';
+
+import { ERROR_MESSAGES, LOGIN, PASSWORD } from '~/constants/auth-data';
 
 export const loginSchema = z.object({
   login: z

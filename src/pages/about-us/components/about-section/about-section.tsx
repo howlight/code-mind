@@ -1,10 +1,8 @@
-import codeMindAvif from './assets/codemind.avif';
-import codeMindWebp from './assets/codemind.webp';
-import codeMindJpg from './assets/codemind.jpg';
-
 import { ABOUT_TEXTS } from '../../constants/texts/about-texts';
-
 import styles from './about-section.module.css';
+import codeMindAvif from './assets/codemind.avif';
+import codeMindJpg from './assets/codemind.jpg';
+import codeMindWebp from './assets/codemind.webp';
 
 export const AboutSection = () => (
   <section className={styles.about}>

@@ -1,6 +1,6 @@
-import type { Topic } from '../../model/types';
 import classNames from 'classnames';
 
+import type { Topic } from '../../model/types';
 import styles from './topics-list.module.css';
 
 type Props = {

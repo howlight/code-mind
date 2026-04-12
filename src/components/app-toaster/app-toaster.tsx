@@ -1,8 +1,8 @@
 import { Toaster } from 'react-hot-toast';
-import { AUTOCLOSE_NOTIFICATION_DELAY } from '../../constants/toaster';
 
-export const AppToaster = () => {
-  return (
+import { AUTOCLOSE_NOTIFICATION_DELAY } from '~/constants/toaster';
+
+export const AppToaster = () => (
     <Toaster
       position="top-center"
       gutter={12}
@@ -40,4 +40,3 @@ export const AppToaster = () => {
       }}
     />
   );
-};

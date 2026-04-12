@@ -1,11 +1,11 @@
-import { DirectionCard } from './components/direction-card';
+import classNames from 'classnames';
+
+import titleStyles from '~/app/styles/ui/title.module.css';
 
 import { directions } from '../../constants/directions';
 import { DIRECTIONS_TEXTS } from '../../constants/texts/directions-texts';
-
+import { DirectionCard } from './components/direction-card';
 import styles from './directions-section.module.css';
-import titleStyles from '../../../../app/styles/ui/title.module.css';
-import classNames from 'classnames';
 
 export const DirectionsSection = () => (
   <section className={styles.directions}>

@@ -3,10 +3,8 @@ import { useState } from 'react';
 import { CourseContent } from './components/course-content';
 import { CourseHeader } from './components/course-header';
 import { CourseSidebar } from './components/course-sidebar';
-
-import { MOCK_COURSE } from './model/mock-course';
-
 import styles from './course-info-page.module.css';
+import { MOCK_COURSE } from './model/mock-course';
 
 const course = MOCK_COURSE;
 

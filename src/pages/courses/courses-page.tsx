@@ -1,9 +1,7 @@
 import { CoursesHeader } from './components/courses-header';
 import { CoursesList } from './components/courses-list';
-
-import { MOCK_COURSES } from './model/mock-courses';
-
 import styles from './courses-page.module.css';
+import { MOCK_COURSES } from './model/mock-courses';
 
 const courses = MOCK_COURSES;
 

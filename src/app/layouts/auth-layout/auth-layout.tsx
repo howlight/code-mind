@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+
 import styles from './auth-layout.module.css';
 
 type Props = {
@@ -18,8 +19,7 @@ export const AuthLayout = ({
   footerText,
   footerLinkText,
   footerLinkTo,
-}: Props) => {
-  return (
+}: Props) => (
     <div className={styles.auth}>
       <section className={styles.authCard}>
         <div className={styles.authLogo}>CodeMind</div>
@@ -38,4 +38,3 @@ export const AuthLayout = ({
       </section>
     </div>
   );
-};

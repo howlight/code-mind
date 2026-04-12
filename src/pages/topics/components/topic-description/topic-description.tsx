@@ -1,5 +1,4 @@
 import type { Topic } from '../../model/types';
-
 import styles from './topic-description.module.css';
 
 type Props = Pick<Topic, 'title' | 'description'>;

@@ -1,4 +1,4 @@
-import type { Review } from '../../../../types/about-us';
+import type { Review } from '~/pages/about-us/types/about-us';
 
 import styles from './review-card.module.css';
 

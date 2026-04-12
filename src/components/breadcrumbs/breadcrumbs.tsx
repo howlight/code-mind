@@ -1,10 +1,11 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import styles from './breadcrumbs.module.css';
-
-import { Fragment } from 'react/jsx-runtime';
-import { useBreadcrumbs } from './hooks/use-breadcrumbs';
 import classNames from 'classnames';
-import { Paths } from '../../constants';
+import { Fragment } from 'react/jsx-runtime';
+import { NavLink, useLocation } from 'react-router-dom';
+
+import { Paths } from '~/constants';
+
+import styles from './breadcrumbs.module.css';
+import { useBreadcrumbs } from './hooks/use-breadcrumbs';
 
 export const HeaderBreadcrumbs = () => {
   const { pathname } = useLocation();

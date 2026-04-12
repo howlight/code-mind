@@ -1,4 +1,5 @@
 import { type ReactNode } from 'react';
+
 import styles from './auth-form.module.css';
 
 type Props = {
@@ -7,8 +8,7 @@ type Props = {
   isLoading: boolean;
   submitMessage: string;
 };
-export const AuthForm = ({ children, onSubmit, isLoading, submitMessage }: Props) => {
-  return (
+export const AuthForm = ({ children, onSubmit, isLoading, submitMessage }: Props) => (
     <form className={styles.form} onSubmit={onSubmit}>
       {children}
 
@@ -17,4 +17,3 @@ export const AuthForm = ({ children, onSubmit, isLoading, submitMessage }: Props
       </button>
     </form>
   );
-};

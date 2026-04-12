@@ -1,5 +1,4 @@
 import type { User } from '../../model/types';
-
 import styles from './profile-form.module.css';
 
 type ProfileFormProperties = Pick<User, 'firstname' | 'lastname' | 'email'>;
