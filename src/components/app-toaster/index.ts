@@ -1,1 +1,1 @@
-export * from './app-toaster';
+export * from './AppToaster';

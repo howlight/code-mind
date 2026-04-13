@@ -1,1 +1,1 @@
-export * from './reviews-section';
+export * from './ReviewsSection';

@@ -9,22 +9,22 @@ import {
 } from '~/api/loaders';
 import { Paths } from '~/constants/paths';
 import { AboutUsPage } from '~/pages/about-us';
-import { LoginPage } from '~/pages/auth/login/login-page';
-import { RegisterPage } from '~/pages/auth/register/register-page';
-import { CourseInfoPage } from '~/pages/course-info';
+import { LoginPage } from '~/pages/auth/login';
+import { RegisterPage } from '~/pages/auth/register';
+import { CoursePage } from '~/pages/course';
 import { CoursesPage } from '~/pages/courses';
 import { Dashboard } from '~/pages/dashboard';
-import { ErrorPage } from '~/pages/error/error-page';
+import { ErrorPage } from '~/pages/error';
 import { LessonPage } from '~/pages/lesson';
-import { NotFoundPage } from '~/pages/not-found/not-found-page';
-import { ProfilePage } from '~/pages/profile/profile-page';
+import { NotFoundPage } from '~/pages/not-found';
+import { ProfilePage } from '~/pages/profile';
 import { TopicsPage } from '~/pages/topics';
 
-import { AppLayout } from '../layouts/app-layout/app-layout';
+import { AppLayout } from '../layouts/app-layout';
 import { CoursesLayout } from '../layouts/courses-layout';
-import { WidgetLayout } from '../layouts/widget-layout/widget-layout';
-import { AuthorizedOnlyRoute } from './protected-route';
-import { AlreadyLoggedInRoute } from './public-only-route';
+import { TrainersLayout } from '../layouts/trainers-layout';
+import { GuestRoute } from './GuestRoute';
+import { ProtectedRoute } from './ProtectedRoute';
 
 export const router = createBrowserRouter([
   {
@@ -43,9 +43,9 @@ export const router = createBrowserRouter([
       {
         path: Paths.DASHBOARD,
         element: (
-          <AuthorizedOnlyRoute>
+          <ProtectedRoute>
             <Dashboard />
-          </AuthorizedOnlyRoute>
+          </ProtectedRoute>
         ),
       },
       {
@@ -64,9 +64,9 @@ export const router = createBrowserRouter([
           {
             path: Paths.MY_COURSES,
             element: (
-              <AuthorizedOnlyRoute>
+              <ProtectedRoute>
                 <CoursesPage />
-              </AuthorizedOnlyRoute>
+              </ProtectedRoute>
             ),
             loader: myCoursesLoader,
           },
@@ -74,24 +74,24 @@ export const router = createBrowserRouter([
       },
       {
         path: Paths.COURSE_INFO,
-        element: <CourseInfoPage />,
+        element: <CoursePage />,
         loader: courseInfoLoader,
       },
       {
         path: Paths.TOPICS,
         element: (
-          <AuthorizedOnlyRoute>
+          <ProtectedRoute>
             <TopicsPage />
-          </AuthorizedOnlyRoute>
+          </ProtectedRoute>
         ),
         loader: topicsLoader,
       },
       {
         path: Paths.TOPIC,
         element: (
-          <AuthorizedOnlyRoute>
+          <ProtectedRoute>
             <LessonPage />
-          </AuthorizedOnlyRoute>
+          </ProtectedRoute>
         ),
         loader: topicLoader,
       },
@@ -99,17 +99,17 @@ export const router = createBrowserRouter([
         path: Paths.WIDGET,
 
         element: (
-          <AuthorizedOnlyRoute>
-            <WidgetLayout />
-          </AuthorizedOnlyRoute>
+          <ProtectedRoute>
+            <TrainersLayout />
+          </ProtectedRoute>
         ),
       },
       {
         path: Paths.PROFILE,
         element: (
-          <AuthorizedOnlyRoute>
+          <ProtectedRoute>
             <ProfilePage />
-          </AuthorizedOnlyRoute>
+          </ProtectedRoute>
         ),
       },
     ],
@@ -117,18 +117,18 @@ export const router = createBrowserRouter([
   {
     path: Paths.LOGIN,
     element: (
-      <AlreadyLoggedInRoute>
+      <GuestRoute>
         <LoginPage />
-      </AlreadyLoggedInRoute>
+      </GuestRoute>
     ),
     errorElement: <ErrorPage />,
   },
   {
     path: Paths.REGISTER,
     element: (
-      <AlreadyLoggedInRoute>
+      <GuestRoute>
         <RegisterPage />
-      </AlreadyLoggedInRoute>
+      </GuestRoute>
     ),
     errorElement: <ErrorPage />,
   },

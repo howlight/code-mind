@@ -1,1 +1,1 @@
-export * from './trainers-list';
+export * from './TrainersList';
