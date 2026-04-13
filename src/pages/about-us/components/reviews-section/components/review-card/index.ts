@@ -1,1 +1,1 @@
-export * from './review-card';
+export * from './ReviewCard';

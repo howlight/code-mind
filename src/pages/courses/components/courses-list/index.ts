@@ -1,1 +1,1 @@
-export * from './courses-list';
+export * from './CoursesList';

@@ -2,8 +2,8 @@ import classNames from 'classnames';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import { Paths } from '~/constants/paths';
-import { useGetCurrentUserQuery } from '~/redux/api/usersAPI';
-import { useIsAuth } from '~/redux/hooks/useIsAuth';
+import { useGetCurrentUserQuery } from '~/store/api/usersApi';
+import { useIsAuth } from '~/store/hooks/useIsAuth';
 import { getLinks } from '~/utils/get-links';
 
 import { HeaderBreadcrumbs } from '../breadcrumbs';

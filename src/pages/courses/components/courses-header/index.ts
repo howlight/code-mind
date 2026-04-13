@@ -1,1 +1,1 @@
-export * from './courses-header';
+export * from './CoursesHeader';

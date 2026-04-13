@@ -1,1 +1,1 @@
-export * from './direction-card';
+export * from './DirectionCard';

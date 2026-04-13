@@ -1,1 +1,1 @@
-export * from './courses-layout';
+export * from './CoursesLayout';
