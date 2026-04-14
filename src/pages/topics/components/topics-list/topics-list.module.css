@@ -15,26 +15,26 @@
   width: 100%;
   padding: 12px 16px;
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-12);
 
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
   text-align: left;
 
   background-color: transparent;
 
-  transition: var(--transition-normal);
+  transition: var(--transition-base);
 }
 
 .topicsBtn.active {
   color: var(--color-accent);
-  background-color: var(--color-button-topics);
+  background-color: var(--accent-10);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .topicsBtn:not(.active):hover {
-    color: var(--color-text);
-    background-color: var(--color-button-bg-hover);
+    color: var(--color-text-primary);
+    background-color: var(--surface-5);
   }
 }

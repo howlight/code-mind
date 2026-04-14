@@ -22,19 +22,19 @@
 
 .formInput {
   padding: 14px 16px;
-  border: 1px solid var(--color-line);
-  border-radius: 8px;
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-8);
 
   font-size: 16px;
   color: inherit;
 
-  background-color: var(--color-input-bg-profile);
+  background-color: var(--surface-3);
 
-  transition: var(--transition-normal);
+  transition: var(--transition-base);
 
   &:focus {
     border-color: var(--color-accent);
-    background-color: var(--color-input-bg-profile-active);
+    background-color: var(--accent-2);
     outline: none;
   }
 }
@@ -46,7 +46,7 @@
 
   padding: 16px 40px;
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-12);
 
   font-size: 16px;
   font-weight: 800;
@@ -54,7 +54,7 @@
 
   background-color: var(--color-accent);
 
-  transition: var(--transition-normal);
+  transition: var(--transition-base);
 }
 
 @media (hover: hover) and (pointer: fine) {

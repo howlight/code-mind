@@ -4,12 +4,12 @@
 
   min-height: 350px;
   padding: 32px;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-xl);
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-24);
 
   color: inherit;
 
-  background-color: var(--color-card-bg);
+  background-color: var(--surface-2);
 
   transition: var(--transition-slow);
 }
@@ -19,14 +19,14 @@
 
   margin-bottom: 24px;
   padding: 5px 12px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-8);
 
   font-size: 10px;
   font-weight: 800;
   color: var(--color-accent);
   text-transform: uppercase;
 
-  background-color: var(--color-tag-bg);
+  background-color: var(--accent-10);
 }
 
 .title {
@@ -54,7 +54,7 @@
 
   font-size: 14px;
   line-height: 1.5;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
   text-overflow: ellipsis;
 }
 
@@ -65,7 +65,7 @@
 
   margin-top: auto;
   padding-top: 24px;
-  border-top: 1px solid var(--color-line);
+  border-top: 1px solid var(--surface-8);
 
   font-size: 13px;
 }
@@ -78,30 +78,30 @@
 
 .difficulty {
   margin-left: 10px;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 }
 
 .diffBar {
   width: 3px;
   height: 12px;
-  border-radius: 4px;
-  background-color: var(--color-line);
+  border-radius: var(--radius-4);
+  background-color: var(--surface-8);
 }
 
 .diffBar.filled {
   background-color: var(--color-accent);
-  box-shadow: var(--shadow-diff-bar);
+  box-shadow: var(--shadow-glow);
 }
 
 .tasksCount {
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .courseCard:hover {
     transform: translateY(-6px);
     border-color: var(--color-accent);
-    background: var(--color-card-bg-hover);
+    background: var(--surface-4);
   }
 }

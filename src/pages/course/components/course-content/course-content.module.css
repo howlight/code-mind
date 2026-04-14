@@ -1,8 +1,8 @@
 .course {
   padding: 48px;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-xl);
-  background-color: var(--color-course-bg);
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-24);
+  background-color: var(--surface-2);
 
   @media (width < 600px) {
     padding-inline: 20px;
@@ -18,7 +18,7 @@
 .courseDescription {
   margin-bottom: 40px;
   line-height: 1.4;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 }
 
 .courseTopicsList {
@@ -36,16 +36,16 @@
 
   width: 100%;
   padding: 20px;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-16);
 
   font-weight: 600;
   line-height: 1.5;
-  color: var(--color-text);
+  color: var(--color-text-primary);
 
-  background-color: var(--color-topic-bg);
+  background-color: var(--surface-2);
 
-  transition: var(--transition-normal);
+  transition: var(--transition-base);
 
   &::before {
     content: '⟶';
@@ -62,6 +62,6 @@
 @media (hover: hover) and (pointer: fine) {
   .courseTopic:hover {
     border-color: var(--color-accent);
-    background-color: var(--color-topic-active-bg);
+    background-color: var(--accent-4);
   }
 }

@@ -11,7 +11,7 @@
   width: 100%;
   padding: 16px 32px;
 
-  background-color: var(--color-navbar-bg);
+  background-color: var(--color-bg-secondary);
 }
 
 .nav {
@@ -51,49 +51,49 @@
   display: block;
 
   padding: 8px 16px;
-  border: 1px solid var(--color-line);
-  border-radius: 10px;
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-10);
 
   font-family: var(--font-primary);
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
   text-decoration: none;
 
-  background-color: var(--color-input-bg);
+  background-color: var(--color-bg-tertiary);
 
   transition: all 0.2s ease;
 }
 
 .link:hover {
   border: 1px solid var(--color-accent);
-  color: var(--color-text);
-  background-color: rgb(56 189 248 / 0.05);
+  color: var(--color-text-primary);
+  background-color: var(--accent-5);
 }
 
 .link.active {
   border: 1px solid var(--color-accent);
-  color: var(--color-text);
-  background-color: rgb(56 189 248 / 0.05);
+  color: var(--color-text-primary);
+  background-color: var(--accent-5);
 }
 
 .linkJoin {
   margin-left: auto;
   border: 1px solid var(--color-accent);
-  color: var(--color-text);
-  background-color: rgb(56 189 248 / 0.05);
+  color: var(--color-text-primary);
+  background-color: var(--accent-5);
 }
 
 .itemCrumbs {
   display: flex;
   align-items: center;
 
-  border: 1px solid var(--color-line);
-  border-radius: 10px;
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-10);
 
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 
-  background-color: var(--color-input-bg);
+  background-color: var(--color-bg-tertiary);
 }
 
 .itemAuth {
@@ -102,17 +102,17 @@
 
 .itemAuth a {
   border: 1px solid var(--color-accent);
-  color: var(--color-text);
-  background-color: rgb(56 189 248 / 0.05);
+  color: var(--color-text-primary);
+  background-color: var(--accent-5);
 }
 
 .itemCrumbs:hover a {
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .itemCrumbs:hover {
   border: 1px solid var(--color-accent);
-  background-color: rgb(56 189 248 / 0.05);
+  background-color: var(--accent-5);
 }
 
 .link:has(.userLogo) {
@@ -129,11 +129,11 @@
 
   width: 24px;
   height: 24px;
-  border-radius: 6px;
+  border-radius: var(--radius-10);
 
   font-size: 10px;
   font-weight: 800;
-  color: #0b0e14;
+  color: var(--color-text-inverse);
 
   background-color: var(--color-accent);
 }
@@ -156,6 +156,6 @@
 
 .list li.active {
   border: 1px solid var(--color-accent);
-  border-radius: 10px;
-  background-color: rgb(56 189 248 / 0.05);
+  border-radius: var(--radius-10);
+  background-color: var(--accent-5);
 }

@@ -11,7 +11,7 @@
 
   background-color: var(--color-accent);
 
-  transition: var(--transition-normal);
+  transition: var(--transition-base);
 }
 
 @media (hover: hover) and (pointer: fine) {

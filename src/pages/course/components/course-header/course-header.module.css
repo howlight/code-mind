@@ -16,10 +16,10 @@
 
     width: 4px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: var(--radius-10);
 
     background-color: var(--color-accent);
-    box-shadow: var(--shadow-line);
+    box-shadow: var(--shadow-accent-strong);
   }
 }
 
@@ -29,5 +29,5 @@
 
   font-size: 18px;
   line-height: 1.4;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 }
