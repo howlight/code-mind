@@ -3,10 +3,10 @@
 
   max-width: 340px;
   padding: 30px;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-xl);
+  border: 1px solid var(--surface-8);
+  border-radius: var(--radius-24);
 
-  background-color: var(--color-sidebar-bg);
+  background-color: var(--surface-3);
 }
 
 .sidebarTitle {
@@ -28,7 +28,7 @@
 .paramLabel {
   font-size: 11px;
   font-weight: 600;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
   text-transform: uppercase;
 }
 
@@ -43,6 +43,6 @@
 
 @media (hover: hover) and (pointer: fine) {
   .sidebarBtn:hover {
-    box-shadow: var(--shadow-btn);
+    box-shadow: var(--shadow-button);
   }
 }

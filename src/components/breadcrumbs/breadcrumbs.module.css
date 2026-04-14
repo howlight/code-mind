@@ -4,27 +4,27 @@
   width: 100%;
   height: 100%;
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: var(--radius-10);
 
   font-family: var(--font-primary);
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
   text-decoration: none;
   text-transform: capitalize;
 
-  transition: all 0.2s ease;
+  transition: all var(--transition-fast);
 }
 
 .link:hover {
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .link.active {
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .link span {
   margin: 0 4px;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 }
