@@ -6,6 +6,7 @@ export const Paths = {
   REGISTER: '/register',
   ABOUT_US: '/about-us',
   PROFILE: '/profile',
+  DASHBOARD: '/dashboard',
   COURSES: '/courses',
   COURSE: '/courses/:courseId',
   SUBTOPICS: '/courses/:courseId/subtopics',
