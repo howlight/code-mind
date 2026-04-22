@@ -2,11 +2,11 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 import { TRAINERS } from '../../model/trainers-config';
-import type { TopicTrainer } from '../../model/types';
+import type { SubtopicTrainer } from '../../model/types';
 import styles from './trainers-list.module.css';
 
 type Props = {
-  trainers: TopicTrainer[];
+  trainers: SubtopicTrainer[];
 };
 
 export const TrainersList = ({ trainers }: Props) => (
