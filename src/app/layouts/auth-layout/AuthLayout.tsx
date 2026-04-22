@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
+import { Paths } from '~/constants';
+
 import styles from './auth-layout.module.css';
 
 type Props = {
@@ -20,21 +22,23 @@ export const AuthLayout = ({
   footerLinkText,
   footerLinkTo,
 }: Props) => (
-    <div className={styles.auth}>
-      <section className={styles.authCard}>
-        <div className={styles.authLogo}>CodeMind</div>
+  <div className={styles.auth}>
+    <section className={styles.authCard}>
+      <Link className={styles.authLogo} to={Paths.ROOT}>
+        CodeMind
+      </Link>
 
-        <h1 className={styles.authTitle}>{title}</h1>
-        <p className={styles.authSubtitle}>{subtitle}</p>
+      <h1 className={styles.authTitle}>{title}</h1>
+      <p className={styles.authSubtitle}>{subtitle}</p>
 
-        {children}
+      {children}
 
-        <p className={styles.authFooter}>
-          {footerText}{' '}
-          <Link to={footerLinkTo} className={styles.authLink}>
-            {footerLinkText}
-          </Link>
-        </p>
-      </section>
-    </div>
-  );
+      <p className={styles.authFooter}>
+        {footerText}{' '}
+        <Link to={footerLinkTo} className={styles.authLink}>
+          {footerLinkText}
+        </Link>
+      </p>
+    </section>
+  </div>
+);

@@ -17,7 +17,7 @@ export const CourseSidebar = ({ title, complexity, exercisesCount }: Props) => (
       <span className={styles.paramLabel}>программа</span>
       <span className={styles.paramValue}>{exercisesCount} упражнений</span>
     </div>
-    <LinkButton to={Paths.TOPICS} className={styles.sidebarBtn}>
+    <LinkButton to={Paths.SUBTOPICS} className={styles.sidebarBtn}>
       Начать обучение
     </LinkButton>
   </aside>

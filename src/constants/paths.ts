@@ -6,16 +6,9 @@ export const Paths = {
   REGISTER: '/register',
   ABOUT_US: '/about-us',
   PROFILE: '/profile',
-  DASHBOARD: '/dashboard',
-
   COURSES: '/courses',
-  ALL_COURSES: 'all',
-  MY_COURSES: 'my',
-
-  COURSE_INFO: '/courses/:courseId',
-  TOPICS: '/courses/:courseId/topics',
-  TOPIC: '/courses/:courseId/:topicId',
-  WIDGET: '/courses/:courseId/:topicId/:widgetType/:widgetId',
-  NOT_FOUND: '/not-found',
+  COURSE: '/courses/:courseId',
+  SUBTOPICS: '/courses/:courseId/subtopics',
+  TRAINER: '/courses/:courseId/subtopics/:subtopicId/:trainerType',
   OTHER_PATHS: '*',
 } as const;

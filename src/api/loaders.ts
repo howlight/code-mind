@@ -1,21 +1,21 @@
 import type { LoaderFunctionArgs } from 'react-router-dom';
 
-export const allCoursesLoader = async () => {
+export const coursesLoader = async () => {
   console.log('all courses loader');
 };
 
-export const myCoursesLoader = async () => {
-  console.log('my courses loader');
-};
-
-export const courseInfoLoader = async (props: LoaderFunctionArgs) => {
+export const courseLoader = async (props: LoaderFunctionArgs) => {
   console.log(`course info loader ${props.params.courseId}`);
 };
 
-export const topicsLoader = async () => {
-  console.log(`topics loader`);
+export const subtopicsLoader = async () => {
+  console.log(`subtopics loader`);
 };
 
-export const topicLoader = async (props: LoaderFunctionArgs) => {
-  console.log(`topic loader ${props.params.topicId}`);
+export const subtopicLoader = async (props: LoaderFunctionArgs) => {
+  console.log(`subtopic loader ${props.params.topicId}`);
+};
+
+export const profileLoader = async () => {
+  console.log(`profile loader`);
 };

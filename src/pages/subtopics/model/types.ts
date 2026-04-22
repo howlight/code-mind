@@ -1,13 +1,13 @@
 import type { TrainerType } from './trainers-config';
 
-export type Topic = {
+export type Subtopic = {
   id: string;
   title: string;
   description: string;
-  trainers: TopicTrainer[];
+  trainers: SubtopicTrainer[];
 };
 
-export type TopicTrainer = {
+export type SubtopicTrainer = {
   type: TrainerType;
   isCompleted: boolean;
 };

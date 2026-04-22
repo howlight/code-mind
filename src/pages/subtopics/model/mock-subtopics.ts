@@ -1,6 +1,6 @@
-import type { Topic } from './types';
+import type { Subtopic } from './types';
 
-export const MOCK_TOPICS: Topic[] = [
+export const MOCK_SUBTOPICS: Subtopic[] = [
   {
     id: '1',
     title: '1. Современные возможности ES6 (ES2015)',

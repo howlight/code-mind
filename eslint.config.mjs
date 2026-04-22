@@ -17,7 +17,9 @@ export default tseslint.config(
   eslintUnicorn.configs.recommended,
   eslintReact.configs.flat.recommended,
   eslintReact.configs.flat['jsx-runtime'],
-  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  // ...tseslint.configs.recommendedTypeChecked,
 
   {
     files: ['**/*.{ts,tsx}'],
@@ -44,6 +46,7 @@ export default tseslint.config(
     rules: {
       // TypeScript
       '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 
@@ -59,6 +62,7 @@ export default tseslint.config(
 
       // Unicorn
       'unicorn/no-null': 'off',
+      'unicorn/prefer-spread': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/better-regex': 'warn',
       'unicorn/prefer-global-this': 'off',
