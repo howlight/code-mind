@@ -3,13 +3,13 @@
   font-size: 20px;
 }
 
-.topicsList {
+.subtopicsList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.topicsBtn {
+.subtopicsBtn {
   cursor: pointer;
 
   width: 100%;
@@ -27,13 +27,13 @@
   transition: var(--transition-base);
 }
 
-.topicsBtn.active {
+.subtopicsBtn.active {
   color: var(--color-accent);
   background-color: var(--accent-10);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .topicsBtn:not(.active):hover {
+  .subtopicsBtn:not(.active):hover {
     color: var(--color-text-primary);
     background-color: var(--surface-5);
   }

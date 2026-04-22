@@ -19,15 +19,14 @@
 
 Проект построен на базе современных инструментов разработки:
 
-- **Frontend:** React (v19) + TypeScript, HTML, CSS.
-- **Сборка:** Vite — для максимально быстрого HMR и оптимизированного билда.
-- **Тестирование:** Vitest — современный фреймворк для юнит-тестов.
-
-### Качество кода и стандарты:
-
-- **ESLint:** Анализ кода (конфиги React, TypeScript, Prettier).
-- **Prettier:** Автоматическое форматирование кода.
-- **Git Hooks:** Husky + lint-staged.
+- **Frontend**: React 19, TypeScript, React Router 7, Redux Toolkit
+- **Стили**: CSS Modules, classnames
+- **Сборка**: Vite 7
+- **Тестирование**: Vitest, jsdom
+- **Качество кода**: ESLint (Unicorn, Simple Import Sort), Prettier, Stylelint
+- **Git Hooks**: Husky, lint-staged, commitlint
+- **Формы**: React Hook Form, Zod
+- **Утилиты**: Swiper Slider, react-hot-toast, react-router-dom
 
 ---
 
@@ -65,19 +64,20 @@
 
 В директории проекта можно использовать следующие команды:
 
-| Команда                   | Описание                                                       |
-| :------------------------ | :------------------------------------------------------------- |
-| `npm run dev`             | Запуск dev-сервера Vite с горячей перезагрузкой (HMR).         |
-| `npm run build`           | Сборка TypeScript и создание production-бандла в папке `dist`. |
-| `npm run preview`         | Локальный просмотр собранной production-версии.                |
-| `npm run lint`            | Запуск проверки кода через ESLint.                             |
-| `npm run format:fix`      | Автоматическое исправление форматирования через Prettier.      |
-| `npm run prepare`         | Настройка Husky (выполняется автоматически при установке).     |
-| `npm run style`           | Компиляция и наблюдение за файлами Sass/SCSS.                  |
-| `npm run test`            | Запуск тестов Vitest.                                          |
-| `npm run test:ui`         | Запуск Vitest в интерактивном UI-режиме.                       |
-| `npm run test:coverage`   | Генерация отчета о покрытии кода тестами.                      |
-| `npm run validate-branch` | Скрипт проверки корректности названия Git-ветки.               |
+| Команда                 | Описание                                                 |
+| ----------------------- | -------------------------------------------------------- |
+| `npm run dev`           | Запуск dev-сервера Vite с HMR                            |
+| `npm run build`         | Сборка TypeScript и создание production-бандла (`dist/`) |
+| `npm run preview`       | Локальный просмотр собранной production-версии           |
+| `npm run lint`          | Проверка кода через ESLint                               |
+| `npm run lint:fix`      | Автоисправление ESLint                                   |
+| `npm run stylelint`     | Проверка CSS через Stylelint                             |
+| `npm run stylelint:fix` | Автоисправление CSS                                      |
+| `npm run format`        | Проверка форматирования через Prettier                   |
+| `npm run format:fix`    | Автоформатирование кода                                  |
+| `npm run test`          | Запуск тестов Vitest                                     |
+| `npm run test:ui`       | Запуск Vitest в интерактивном UI-режиме                  |
+| `npm run test:coverage` | Генерация отчета о покрытии кода тестами                 |
 
 ---
 

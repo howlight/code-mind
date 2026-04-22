@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 import { Paths } from '~/constants';
 
-import styles from './breadcrumbs.module.css';
+import styles from './header-breadcrumbs.module.css';
 import { useBreadcrumbs } from './hooks/useBreadcrumbs';
 
 export const HeaderBreadcrumbs = () => {
